@@ -36,7 +36,7 @@ jobs:
             .
 
       - name: Run SCA Security Scan (Trivy)
-        uses: aquasecurity/trivy-action@0.24.0
+        uses: aquasecurity/trivy-action@0.35.0
         with:
           image-ref: ghcr.io/sudhanya3/personal-takehome-project:${{ github.sha }}
           format: table
