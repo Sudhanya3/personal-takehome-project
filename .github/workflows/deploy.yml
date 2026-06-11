@@ -31,7 +31,7 @@ jobs:
     steps:
     - name: Build a Docker Image
       run: |
-       docker build -t ${{ secrets.DOCK_USER }}/personal-takehome-project:${{ github.sha }} .
+       docker build -t ${{ secrets.DOCK_USER }}/personal-takehome-project:${{ github.sha }}.
 
  docker-run:
     runs-on: self-hosted
