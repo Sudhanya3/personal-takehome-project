@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM cgr.dev/chainguard/nginx:latest
 
 WORKDIR /usr/src/app
 
