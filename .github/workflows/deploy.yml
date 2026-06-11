@@ -24,6 +24,9 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GH_ACCESS_TOKEN }}
+      - name: Set lowercase owner
+        run: |
+          echo "OWNER_LC=${GITHUB_REPOSITORY_OWNER,,}" >> $GITHUB_ENV
 
   docker-image-push:
     runs-on: self-hosted
