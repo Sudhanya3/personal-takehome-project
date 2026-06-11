@@ -48,5 +48,5 @@ jobs:
         run: |
           docker run -d \
             --name personal-takehome-project \
-            -p 80:80 \
+            -p 8080:80 \
             ghcr.io/${OWNER_LC}/personal-takehome-project:${GITHUB_SHA}
